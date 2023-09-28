@@ -2,8 +2,6 @@ const btnShare = document.querySelector('.btnShare');
 let main = document.querySelector('main');
 
 
-// console.log(notificacion);
-
 
 btnShare.addEventListener('mouseenter', () => {
     
@@ -14,7 +12,7 @@ btnShare.addEventListener('mouseenter', () => {
     divNotication.innerHTML = `
     <div class="active">
     <p>Share</p>
-
+    
     <a href="https://www.instagram.com/sanchezetto"><img src="images/icon-facebook.svg" alt="icon-facebook"></a>
     <a href="https://www.instagram.com/sanchezetto"><img src="images/icon-twitter.svg" alt="icon-twitter"></a>
     <a href="https://www.instagram.com/sanchezetto"><img src="images/icon-pinterest.svg" alt="icon-pinterest"></a>
@@ -23,11 +21,14 @@ btnShare.addEventListener('mouseenter', () => {
     </div>
     `
     main.appendChild(divNotication);
-
+    
     btnShare.addEventListener('mouseleave', () => {
+        
+        
+
         setTimeout(() => {
             divNotication.remove();
-        }, 1000)
+        }, 2000)
     });
     
     
