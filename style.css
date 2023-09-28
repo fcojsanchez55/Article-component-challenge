@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+:root{
+    --Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+    --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+    --Grayish-Blue: hsl(212, 23%, 69%);
+    --Light-Grayish-Blue: hsl(210, 46%, 95%);
+}
+
+
+body {
+    font-family: 'Manrope', sans-serif;
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--Light-Grayish-Blue);
+
+}
+
+main{
+    position: relative;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 730px;
+    height: 280px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #fff;
+    overflow: hidden;
+
+}
+
+
+article {
+    width: 285px;
+    height: 280px;
+    overflow: hidden;
+}
+
+article img {
+    display: block;
+    width: 350px;
+   
+}
+
+
+
+section{
+    width: 445px;
+    height: 280px;
+}
+
+
+section #paragraph-1 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--Very-Dark-Grayish-Blue);
+    margin: 38px 32px 20px 32px;
+    letter-spacing: 0.5px;
+}
+
+ section #paragraph-2 {
+    margin: -5px 40px 20px 33px;
+    line-height: 20px;
+    color: var(--Grayish-Blue);
+}
+
+/*
+=============
+share active
+=============
+*/
+
+.container-active{
+  
+    width: 248px;
+    height: 55px;
+    background-color: var(--Very-Dark-Grayish-Blue);
+    border-radius: 10px;
+    position: absolute;
+    right: -57px;
+    bottom: 90px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 14px;
+    width: 200px;
+    height: 54px;
+
+}
+
+.active p {
+    font-size: 15px;
+    color: var(--Grayish-Blue);
+    font-weight: 500;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+
+}
+
+.square{
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    margin: auto;
+    margin-top: -10px;
+    background-color: var(--Very-Dark-Grayish-Blue);
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 268;
+    height: 50px;
+    margin: -5px 50px 20px 32px;
+}
+
+.card .img-name{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.card .img-name img{
+    width: 40px;
+    border-radius: 100%;
+    margin-right: 15px;
+}
+
+.card .img-name p{
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    color: var(--Very-Dark-Grayish-Blue);
+}
+
+.card .img-name p span{
+    font-weight: 500;
+    color: var(--Grayish-Blue);
+}
+
+
+.btnShare{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    background-color: var(--Light-Grayish-Blue);
+    border-radius: 100%;
+    border: none;
+    cursor: pointer;
+    margin-left: 150px;
+}
+
+.btnShare:hover{
+    background-color: var(--Grayish-Blue);
+}
+
+.btnShare img{
+   width: 16px;
+}
+
+
+
+
+
+
+/* 
+=========================
+media query 
+=========================
+*/
+
+@media (max-width: 500px) {
+
+   .container{
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+    height: 516px;
+   }
+
+
+    article {
+        width: 100%;
+        
+    }
+
+    section{
+        width: 330px;
+    }
+
+    section #paragraph-1 {
+       font-size: 16px;
+       margin-top: 25px;
+    }
+
+
+    .card{
+      width: 266px;
+    } 
+
+    .btnShare{
+        margin-left: 50px;
+    }
+    
+    .btnShare:hover{
+        background-color: var(--Grayish-Blue);
+    }
+    
+    .btnShare img{
+       width: 16px;
+    }
+   
+
+    .container-active{
+        top: 35.5em;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 0;
+        width: 100%;
+        border-radius: 0px 0px 10px 10px;
+    }
+
+    .active{
+        margin-left: 20px;
+    }
+
+    .active p {
+        font-size: 10px;
+    }
+
+    .square{
+       display: none;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
